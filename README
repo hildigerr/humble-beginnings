@@ -1,26 +1,18 @@
-Programs for Windows/DOS
-
 ♦Pass-Line Craps 
 
 Pass-line is the most basic bet in a game of craps, and initially I intended to have the whole array of bets available and a ASCII drawing of the table, etc. But now I've moved on to bigger projects and I don't know if I'll ever come back to this one.
 
 ♦ The Buttons Game
 
-This is probably the most complex program I've written, besides the one I'm working on now. I was really proud when I figured out how to make it work. I wrote it on paper at my wife's sister's house one day when she wouldn't let me take my laptop with us. Anyway this game is really called Mancala; I call it "The Buttons Game" because my wife and I use to play it with buttons on a piece of cardboard. The computer opponent is no were near as good a player as my Grandpa (who taught me the game) or my brother (who I've never beat). But I still play this every once and a while.
+This game is really called Mancala; I call it "The Buttons Game" because my wife and I use to play it with buttons on a piece of cardboard. I wrote it on paper at my wife's sister's house one day when she wouldn't let me take my laptop with us, and was really proud that it worked when I got home and transcribed it. When porting this from Windows, I had to get rid of the fancy characters for the borders so it doesn't look as nice, but it still works. The computer opponent is no were near as good a player as my Grandpa (who taught me the game) or my brother (who I've never beat). But, I still play this every once and a while.
 
 ♦ clark
 
 Clark's rule is a mathematical formula for calculating the dosage of medicine for children. It's based on the average weight of an adult, the weight of your child, and the adult dosage. Latter I will update it to be used based on dosages of whatever age range the user selects. That way if you have children's medicine that you need to give to an infant, you'll be able to determine proper dosage based on the age range from the label. WARNING: Consult your doctor before administering medication to your child. 
 
-Programs for Linux
-
 ♦HildigerR's Yeast Helper
 
 This program will tell you how much yeast you need for making bread, depending on the quantity of flour and the type of yeast you are using.
-
-♦ The Buttons Game
-
-I finally finished porting this from Windows. I had to get rid of the fancy characters for the borders so it doesn't look as nice, but it still works. This game is really called Mancala; I call it "The Buttons Game" because my wife and I use to play it with buttons on a piece of cardboard. The computer opponent is no were near as good a player as my Grandpa (who taught me the game) or my brother (who I've never beat). But I still play this every once and a while.
 
 ♦ One Thousand
 
@@ -33,11 +25,4 @@ This is one of the exercises from one of the books that I've been studying C wit
  ♦Chuckaluck
 
 This is a dice game that I think is pretty cool. There are different kinds of bets that all pay differently. The display is sort of hard to follow, and there is no quit command. If you want to quit ctrl-c should exit or you can just bet all your money on tipples over and over till you loose it all, which should happen very quickly.
-
-♦ Guessing
-
-This is a simple guessing game. It was one of my practice assignments. You have 3 guesses to guess a random number 1-20. ADDED: The computer will notify you if your choice was too high or too low.
-
-More:
-    * Life tracker and who-goes-first calculator for my wife and my MTG (Magic The Gathering) collectible card games.
 
