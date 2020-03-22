@@ -14,7 +14,7 @@ int main()
     char yorn;
     float cash = 0.25;
     float bet_amount;
-    int bet_type;
+    char bet_type;
     int goal;
 
     /*get cash*/
@@ -52,18 +52,19 @@ int main()
         /*bet placement*/
         do{
            puts("What type of bet will you place?");
-           puts("1-Single#, 2-Triple###, 3-Particular Total, 4-High(11-17),");
-           printf("\t5-Low(4-10), 6-Odd, or 7-Even  :");
-           scanf("%d", &bet_type);
-        }while( bet_type < 1 || bet_type > 7 );
-        if(bet_type == 1 || bet_type == 3) goal = bet_spec(bet_type);
+           puts("\t1-Single#,\n\t2-Triple###,\n\t3-Particular Total,\n\t4-High(11-17),");
+           printf("\t5-Low(4-10),\n\t6-Odd, or\n\t7-Even\n:");
+           scanf("%c", &bet_type);
+        }while( bet_type < '0' || bet_type > '7' );
+        if( bet_type == '0' ) break; /* Quit */
+        if( bet_type == '1' || bet_type == '3' ) goal = bet_spec(bet_type);
         bet_amount = 0.00;
         do{
            printf("How much do you wish to bet? ");
            scanf("%f", &bet_amount);
         }while(bet_amount > cash);
 
-        if(bet_amount == 0) break;  /*to quit*/
+        if(bet_amount <= 0) break;  /*to quit*/
 
         /*roll dice*/
         dice[0] = (rand() %6) +1;
@@ -103,16 +104,16 @@ int main()
 
 void instruct( void )
 {
-    int x;
+    char x;
     do{
        puts("\nThere are 7 kinds of bets:");
        puts("\t1-single, 2-triples, 3-total, 4-high, 5-low, 6-odd, 7-even");
        printf("Which one do you wish more info about? (1-7, 0 when done) :");
-       scanf("%d", &x);
+       scanf("%c", &x);
 
        switch(x){
-            case 0: break;
-            case 1:
+            case '0': break;
+            case '1':
                 puts("\n\n\tSINGLE");
                 puts("You coose a number 1-6. The 3 dice are rolled.");
                 puts("If your number comes up");
@@ -120,33 +121,33 @@ void instruct( void )
                 puts("                       twice you get double your money,");
                 puts("                       thrice pays you triple.");
                 break;
-            case 2:
+            case '2':
                 puts("\n\n\tTRIPLES");
                 puts("You bet that all three dice will be the same number.");
                 puts("If you are correct you get paid 30 to 1!");
                 break;
-            case 3:
+            case '3':
                 puts("\n\n\tPARTICULAR TOTAL");
                 puts("You choose a number 4-17. That is the dice total that");
                 puts("must be rolled for you to be paid.");
                 puts("But if a triple (also called a raffle) is rolled you loose.");
                 break;
-            case 4:
+            case '4':
                 puts("\n\n\tHIGH");
                 puts("You bet that the total will be high, th.i. 11-17");
                 puts("Pays even money. But you loose on a raffle.");
                 break;
-            case 5:
+            case '5':
                 puts("\n\nLOW");
                 puts("You bet that the total will be low, th.i. 4-10");
                 puts("Pays even money. But you loose on a raffle.");
                 break;
-            case 6:
+            case '6':
                 puts("\n\n\tODD");
                 puts("You bet that the total will be odd.");
                 puts("Pays even money. But you loose on a raffle.");
                 break;
-            case 7:
+            case '7':
                 puts("\n\n\tEVEN");
                 puts("You bet that the total will be even.");
                 puts("Pays even money. But you loose on a raffle.");
@@ -157,7 +158,7 @@ void instruct( void )
             #ifdef _WIN32
                 if(x != 0) system("PAUSE");
             #endif
-    }while(x != 0);
+    }while(x != '0');
 }
 
 int bet_spec(int tp)
