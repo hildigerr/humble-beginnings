@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 void instruct( void );
@@ -13,16 +12,17 @@ int dice[4]; /*0-dice_1, 1-dice_2, 2-dice_3, 3-dice_total*/
 int main()
 {
     char yorn;
-    float cash = .25;
+    float cash = 0.25;
     float bet_amount;
     int bet_type;
     int goal;
 
     /*get cash*/
-    srand(time());
+    srand(time(NULL));
     cash += (rand() % 50) + 1;
 
-    /*windows title
+#ifdef _WIN32
+    /*Windows Title*/
     printf("\t\t\b%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n",201,205,205,205,205,
 			   205,205,205,205,205,205,205,205,205,205,205,205,205,205,187);
     printf("\t%c   CHUCK-A-LUCK   %c\n", 186, 186);
@@ -31,14 +31,14 @@ int main()
     printf("\t\t\b%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n",200,205,205,205,205,
 			   205,205,205,205,205,205,205,205,205,205,205,205,205,205,188);
     system("PAUSE");
-    */
+#else
     /*Linux Title*/
     printf("\t*------------------*\n");
     printf("\t|   CHUCK-A-LUCK   |\n");
     printf("\t|        by        |\n");
     printf("\t|     Hildigerr    |\n");
     printf("\t*------------------*\n");
-
+#endif
     printf("\nDo you require instructions? (Y or N) ");
     scanf("%c", &yorn);
     if(yorn == 'y' || yorn == 'Y') instruct();
@@ -95,9 +95,12 @@ int main()
         }/*end bet type switch*/
     }/*end while have cash*/
 
-    /*system("PAUSE"); <-windows command*/
+#ifdef _WIN32
+    system("PAUSE");
+#endif
     return 0;
 }
+
 void instruct( void )
 {
     int x;
@@ -151,9 +154,12 @@ void instruct( void )
             default:
                 puts("YOU MUST ENTER 0 to QUIT or 1-7 FOR INSTRUCTION");
             }
-            /*if(x != 0) system("PAUSE");*/
+            #ifdef _WIN32
+                if(x != 0) system("PAUSE");
+            #endif
     }while(x != 0);
 }
+
 int bet_spec(int tp)
 {
     int r;
@@ -163,6 +169,7 @@ int bet_spec(int tp)
     }while( (tp==1&&(r<1||r>6)) || (tp==3&&(r<4||r>17)) );
     return r;
 }
+
 float single(int go, float amount)
 {
     int x;
@@ -175,12 +182,14 @@ float single(int go, float amount)
     if(ret == 0) ret -= amount;
     return ret;
 }
+
 float p_total(int go, float amount)
 {
     if( dice[3] != go ) amount -= amount*2;
     else if( (dice[0] == dice[1])&&(dice[1] == dice[2]) ) amount -= amount*2;
     return amount;
 }
+
 float high_low(int type, float amount)
 {
     if((type == 4)&&( dice[3] < 11 )) amount -= amount*2;
@@ -188,6 +197,7 @@ float high_low(int type, float amount)
     else if((dice[0] == dice[1])&&(dice[1] == dice[2])) amount -= amount*2;
     return amount;
 }
+
 float odd_even(int type, float amount)
 {
     if((type == 6)&&( dice[3] %2 == 0)) amount -= amount*2;

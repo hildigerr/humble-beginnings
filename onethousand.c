@@ -25,7 +25,7 @@ void useop( int opp );
 
 int main()
 {
-    srand(time());
+    srand(time(NULL));
 
     system("clear");/*dos use ->"cls");*/
     puts("1000");
