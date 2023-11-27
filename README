@@ -1,28 +1,28 @@
-♦Pass-Line Craps 
-
-Pass-line is the most basic bet in a game of craps, and initially I intended to have the whole array of bets available and a ASCII drawing of the table, etc. But now I've moved on to bigger projects and I don't know if I'll ever come back to this one.
-
 ♦ The Buttons Game
 
 This game is really called Mancala; I call it "The Buttons Game" because my wife and I use to play it with buttons on a piece of cardboard. I wrote it on paper at my wife's sister's house one day when she wouldn't let me take my laptop with us, and was really proud that it worked when I got home and transcribed it. When porting this from Windows, I had to get rid of the fancy characters for the borders so it doesn't look as nice, but it still works. The computer opponent is no were near as good a player as my Grandpa (who taught me the game) or my brother (who I've never beat). But, I still play this every once and a while.
 
-♦ clark
+ ♦ Chuckaluck
 
-Clark's rule is a mathematical formula for calculating the dosage of medicine for children. It's based on the average weight of an adult, the weight of your child, and the adult dosage. Latter I will update it to be used based on dosages of whatever age range the user selects. That way if you have children's medicine that you need to give to an infant, you'll be able to determine proper dosage based on the age range from the label. WARNING: Consult your doctor before administering medication to your child. 
+This is a dice game that I think is pretty cool. There are different kinds of bets that all pay differently. The display is sort of hard to follow, and there is no quit command. If you want to quit ctrl-c should exit or you can just bet all your money on tipples over and over till you loose it all, which should happen very quickly.
 
-♦HildigerR's Yeast Helper
+♦ Clark
 
-This program will tell you how much yeast you need for making bread, depending on the quantity of flour and the type of yeast you are using.
+Clark's rule is a mathematical formula for calculating the dosage of medicine for children. It's based on the average weight of an adult, the weight of your child, and the adult dosage. Latter I will update it to be used based on dosages of whatever age range the user selects. That way if you have children's medicine that you need to give to an infant, you'll be able to determine proper dosage based on the age range from the label. WARNING: Consult your doctor before administering medication to your child.
+
+♦ Concentration
+
+This is one of the exercises from one of the books that I've been studying C with: "C Programming for the Absolute Beginner". You look at some numbers and after a time they disappear and you have to remember what they were and what order they were in. WARNING: Only input numbers, one time I couldn't remember the number so I put x and the program got stuck in a loop. If this happens ctrl-c should exit the program. I may fix this but It's not a high priority.
 
 ♦ One Thousand
 
 This is a game that a learned from a book about calculator games. The object of the game it to reach 1000 as quick as possible. Personally I don't think it IS possible. But if you can do it CONGRATULATIONS!
 
-♦Concentration
+♦ Pass-Line Craps 
 
-This is one of the exercises from one of the books that I've been studying C with: "C Programming for the Absolute Beginner". You look at some numbers and after a time they disappear and you have to remember what they were and what order they were in. WARNING: Only input numbers, one time I couldn't remember the number so I put x and the program got stuck in a loop. If this happens ctrl-c should exit the program. I may fix this but It's not a high priority.
+Pass-line is the most basic bet in a game of craps, and initially I intended to have the whole array of bets available and a ASCII drawing of the table, etc. But now I've moved on to bigger projects and I don't know if I'll ever come back to this one.
 
- ♦Chuckaluck
+♦ Yeast Helper
 
-This is a dice game that I think is pretty cool. There are different kinds of bets that all pay differently. The display is sort of hard to follow, and there is no quit command. If you want to quit ctrl-c should exit or you can just bet all your money on tipples over and over till you loose it all, which should happen very quickly.
+This program will tell you how much yeast you need for making bread, depending on the quantity of flour and the type of yeast you are using.
 
