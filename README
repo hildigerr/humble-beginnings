@@ -8,7 +8,7 @@ The body mass index is a measure of body fat. This program will tell you if some
 
  ♦ C2F
 
-Convert degrees celsius to fahrenheit.
+Convert degrees celsius to fahrenheit. The same binary can be renamed f2c to do the inverse conversion.
 
  ♦ Chuckaluck
 
