@@ -18,6 +18,10 @@ This is a dice game that I think is pretty cool. There are different kinds of be
 
 Clark's rule is a mathematical formula for calculating the dosage of medicine for children. It's based on the average weight of an adult, the weight of your child, and the adult dosage. Latter I will update it to be used based on dosages of whatever age range the user selects. That way if you have children's medicine that you need to give to an infant, you'll be able to determine proper dosage based on the age range from the label. WARNING: Consult your doctor before administering medication to your child.
 
+♦ Compbuy
+
+I created this as a one-off to help select new computers to buy back when money was an object.
+
 ♦ Concentration
 
 This is one of the exercises from one of the books that I've been studying C with: "C Programming for the Absolute Beginner". You look at some numbers and after a time they disappear and you have to remember what they were and what order they were in. WARNING: Only input numbers, one time I couldn't remember the number so I put x and the program got stuck in a loop. If this happens ctrl-c should exit the program. I may fix this but It's not a high priority.
