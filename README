@@ -26,6 +26,10 @@ I created this as a one-off to help select new computers to buy back when money 
 
 This is one of the exercises from one of the books that I've been studying C with: "C Programming for the Absolute Beginner". You look at some numbers and after a time they disappear and you have to remember what they were and what order they were in. WARNING: Only input numbers, one time I couldn't remember the number so I put x and the program got stuck in a loop. If this happens ctrl-c should exit the program. I may fix this but It's not a high priority.
 
+♦  MTG Lifetracker
+
+I created this to keep track of player's life points during games of Magic The Gathering. It also randomly picks who should go first. It was made back before they added poison, and saw quite a bit of use in myhousehold until that was added.
+
 ♦ One Thousand
 
 This is a game that a learned from a book about calculator games. The object of the game it to reach 1000 as quick as possible. Personally I don't think it IS possible. But if you can do it CONGRATULATIONS!
